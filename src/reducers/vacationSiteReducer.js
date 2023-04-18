@@ -7,5 +7,9 @@ const vacationSiteReducer = (state = store, action) => {
                 ...state,
                 vacationSites: [...state.vacationSites, action.payload]
             }
+        default:
+            return state
     }
 }
+
+export default vacationSiteReducer;
